@@ -35,7 +35,9 @@ while (true)
     }
     else if (choice == 'r')
     {
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("\nÄr du säker på att du vill rensa adressboken? Detta går inte att ångra! (j/n)");
+        Console.ResetColor();
         choice = Console.ReadKey(true).KeyChar;
         if (choice == 'j')
         {
